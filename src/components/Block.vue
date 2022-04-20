@@ -26,7 +26,7 @@ export default {
     },
     stopTimer(){
       clearInterval(this.timer);
-      console.log("demorou pra clicar:", this.reactionTime);
+      this.$emit("end", this.reactionTime);
     }
   }
 }
